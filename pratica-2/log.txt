@@ -1,0 +1,32 @@
+docker run -it docker_estoque   
+
+Sistema de Gerenciamento de Estoque
+1. Cadastrar Produto
+2. Listar Produtos
+3. Consultar Produto
+4. Vender Produto
+5. Sair
+Escolha uma opção: 1
+Digite o nome do produto: Pão
+Digite a quantidade do produto: 80
+Digite o preço do produto: 0.75
+Produto cadastrado com sucesso!
+
+Sistema de Gerenciamento de Estoque
+1. Cadastrar Produto
+2. Listar Produtos
+3. Consultar Produto
+4. Vender Produto
+5. Sair
+Escolha uma opção: 2
+Produtos em estoque:
+Nome: Pão, Quantidade: 80, Preço: R$0.75
+
+Sistema de Gerenciamento de Estoque
+1. Cadastrar Produto
+2. Listar Produtos
+3. Consultar Produto
+4. Vender Produto
+5. Sair
+Escolha uma opção: 5
+Saindo do sistema.
