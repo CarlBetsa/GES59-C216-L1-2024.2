@@ -1,0 +1,281 @@
+{
+	"id": "4306277b-b166-4ca9-8c59-9b77c162141b",
+	"name": "C216-L1-PRATICA-3-Carl_GES59",
+	"timestamp": "2024-09-20T17:15:29.058Z",
+	"collection_id": "38488916-3dd06d07-6abb-480b-b03f-312a4b5931a6",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 14,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-09-20T17:15:26.797Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "4ad9fcc0-16bc-4fa4-9006-c4e644541782",
+			"name": "GET - Hello World",
+			"url": "http://localhost:8000/",
+			"time": 14,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response contains 'Hello, FastAPI!'": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains 'Hello, FastAPI!'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				14
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response contains 'Hello, FastAPI!'": true
+				}
+			]
+		},
+		{
+			"id": "e02d7dee-f529-4b3c-8caa-34878b4cc468",
+			"name": "GET - Hello via Query Parameter",
+			"url": "http://localhost:8000/api/v1/hello?name=Carl_GES59",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response contains 'Hello Carl_GES59'": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains 'Hello Carl_GES59'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response contains 'Hello Carl_GES59'": true
+				}
+			]
+		},
+		{
+			"id": "8fe29d2c-254e-4a91-8ccf-0ce0eeb7ff1e",
+			"name": "GET - Hello via Path Parameter",
+			"url": "http://localhost:8000/api/v1/hello/Carl_GES59",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response contains 'Hello Carl_GES59'": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains 'Hello Carl_GES59'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				12
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response contains 'Hello Carl_GES59'": true
+				}
+			]
+		},
+		{
+			"id": "f54004bd-3efb-4b23-ae58-534c86bd9467",
+			"name": "POST - Hello via Body",
+			"url": "http://localhost:8000/api/v1/hello",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response contains 'Hello Carl_GES59'": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains 'Hello Carl_GES59'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response contains 'Hello Carl_GES59'": true
+				}
+			]
+		},
+		{
+			"id": "571738e0-26cb-40ee-ab37-719c2e7f6d30",
+			"name": "PUT - Update Name",
+			"url": "http://localhost:8000/api/v1/update",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response contains updated name": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains updated name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response contains updated name": true
+				}
+			]
+		},
+		{
+			"id": "c9b3800f-1587-4c5c-88c7-47d3f7b210fb",
+			"name": "DELETE - Delete Resource",
+			"url": "http://localhost:8000/api/v1/delete?name=Carl_GES59",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response confirms deletion": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response confirms deletion": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response confirms deletion": true
+				}
+			]
+		},
+		{
+			"id": "0c5de09d-d5a3-4021-b397-e6e52c07909c",
+			"name": "PATCH - Modify Resource",
+			"url": "http://localhost:8000/api/v1/patch",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response confirms partial modification": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response confirms partial modification": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response confirms partial modification": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 59,
+	"collection": {
+		"requests": [
+			{
+				"id": "4ad9fcc0-16bc-4fa4-9006-c4e644541782",
+				"method": "GET"
+			},
+			{
+				"id": "e02d7dee-f529-4b3c-8caa-34878b4cc468",
+				"method": "GET"
+			},
+			{
+				"id": "8fe29d2c-254e-4a91-8ccf-0ce0eeb7ff1e",
+				"method": "GET"
+			},
+			{
+				"id": "f54004bd-3efb-4b23-ae58-534c86bd9467",
+				"method": "POST"
+			},
+			{
+				"id": "571738e0-26cb-40ee-ab37-719c2e7f6d30",
+				"method": "PUT"
+			},
+			{
+				"id": "c9b3800f-1587-4c5c-88c7-47d3f7b210fb",
+				"method": "DELETE"
+			},
+			{
+				"id": "0c5de09d-d5a3-4021-b397-e6e52c07909c",
+				"method": "PATCH"
+			}
+		]
+	}
+}
