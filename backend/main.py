@@ -189,9 +189,14 @@ async def resetar_estoque():
 async def listar_vendas():
     conn = await get_database()
     try:
-        query = "SELECT * FROM vendas"
+        query = """
+        SELECT vendas.id, vendas.quantidade_vendida, vendas.valor_venda, vendas.data_venda, produtos.nome
+        FROM vendas
+        JOIN produtos ON vendas.produto_id = produtos.id
+        """
         rows = await conn.fetch(query)
         vendas = [dict(row) for row in rows]
         return vendas
     finally:
         await conn.close()
+
